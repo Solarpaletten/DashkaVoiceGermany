@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>🚀 DashkaBot Polish 2.0</title>
+    <title>🚀 DashkaBot Germany 2.1</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <style>
@@ -337,7 +337,7 @@
     <div class="container">
         <div class="header">
             <h1>🚀 DashkaBot</h1>
-            <p>Galaxy S24 - Russian ↔ English Voice Translator 2.1</p>
+            <p>Galaxy S24 - Russian ↔ Germany Voice Translator 2.1</p>
         </div>
 
         <div class="role-selector">
@@ -345,7 +345,7 @@
                 🇷🇺 Russian Speaker
             </button>
             <button class="role-btn steuerberater" onclick="setRole('steuerberater')">
-                🇬🇧 Polish Speaker
+                🇬🇧 Germany Speaker
             </button>
         </div>
 
@@ -648,8 +648,8 @@
             updateStatus('🔄 Перевожу...');
 
             try {
-                const fromLang = currentRole === 'user' ? 'RU' : 'PL';
-                const toLang = currentRole === 'user' ? 'PL' : 'RU';
+                const fromLang = currentRole === 'user' ? 'RU' : 'DE';
+                const toLang = currentRole === 'user' ? 'DE' : 'RU';
 
                 const response = await fetch(`${config.aiServer}/translate`, {
                     method: 'POST',
@@ -858,11 +858,11 @@
             document.querySelectorAll('.role-btn').forEach(btn => btn.classList.remove('active'));
             document.querySelector('.role-btn.' + role).classList.add('active');
 
-            const roleName = role === 'user' ? 'Russian Speaker 🇷🇺' : 'Polish Speaker🇬🇧';
+            const roleName = role === 'user' ? 'Russian Speaker 🇷🇺' : 'Germany Speaker🇬🇧';
             updateStatus('Роль: ' + roleName);
 
             if (recognition) {
-                recognition.lang = role === 'user' ? 'ru-RU' : 'pl-PL';
+                recognition.lang = role === 'user' ? 'ru-RU' : 'de-DE';
             }
         }
 
