@@ -34,10 +34,10 @@ const DashboardMobile: React.FC = () => {
         {/* Header */}
         <header className="text-center mb-4">
           <h1 className="text-white text-xl font-bold mb-1">
-            🚀 DashkaBot Polish 2.0
+            🚀 DashkaBot Germany 2.1
           </h1>
           <p className="text-white/80 text-xs mb-3">
-            📱 Mobile | Russian ⇄ Polish Voice Translator
+            📱 Mobile | Russian ⇄ Germany Voice Translator
           </p>
           
           {/* Language Selector - Compact */}

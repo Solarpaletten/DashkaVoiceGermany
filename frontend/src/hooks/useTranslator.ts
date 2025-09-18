@@ -29,8 +29,8 @@ export const useTranslator = () => {
 
   // API Configuration
   const config = {
-    aiServer: import.meta.env.VITE_API_URL || "https://api.dashka-germany.onrender.com",
-    wsServer: import.meta.env.VITE_WS_URL || "wss://api.dashka-germany.onrender.com/ws",
+    aiServer: import.meta.env.VITE_API_URL || "https://api-dashka-germany.onrender.com",
+    wsServer: import.meta.env.VITE_WS_URL || "wss://api-dashka-germany.onrender.com/ws",
     enableWebSocket: true,
     enableSpeech: true
   };
