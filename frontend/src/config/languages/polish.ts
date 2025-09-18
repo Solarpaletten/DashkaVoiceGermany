@@ -24,10 +24,10 @@ export const polishConfig: LanguageConfig = {
   },
   languageSelector: {               // ← ДОБАВЛЕНО
     sourceLabel: 'Russian Speaker',
-    targetLabel: 'Polish Speaker'
+    targetLabel: 'Germany Speaker'
   },
   translationLanguages: {
     source: { code: 'ru', name: 'Русский', flag: '🇷🇺' },
-    target: { code: 'pl', name: 'Polski', flag: '🇵🇱' }
+    target: { code: 'de', name: 'Germany', flag: '🇵🇱' }
   }
 };
